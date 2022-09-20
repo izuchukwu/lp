@@ -1,0 +1,21 @@
+.container {
+  padding: 20px 40px;
+}
+
+.link {
+	color: rgba(0, 0, 0, 0.5);
+	transition: 0.15s color;
+}
+
+.link:hover {
+	color: black;
+}
+
+.link span {
+	display: inline-block;
+	transition: 0.15s transform;
+}
+
+.link:hover span {
+	transform: translateX(5px);
+}
