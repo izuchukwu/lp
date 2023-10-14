@@ -21,8 +21,8 @@ const Home: NextPage = () => {
 		gtag('config', 'G-4WE4EE5CQY');`}
 	</Script>
 
-      <p><strong>Izu</strong><br/><span style={{display: 'inline-block', paddingTop: 5}}>Founder, Fable</span></p>
-      <p><a className={styles.link} href="https://fableml.com"><span>→ Fable</span></a></p>
+      <p><strong>Izu</strong><br/><span style={{display: 'inline-block', paddingTop: 5}}>CEO & Co-Founder, Charm</span></p>
+      <p><a className={styles.link} href="https://joincharm.com"><span>→ Charm</span></a></p>
       <p><a className={styles.link} href="https://twitter.com/izuchukwuuu"><span>→ Twitter</span></a></p>
       <p><a className={styles.link} href="https://github.com/izuchukwu"><span>→ GitHub</span></a></p>
     </div>
