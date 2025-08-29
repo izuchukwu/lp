@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import styles from '../styles/Home.module.css'
 
-const Home: NextPage = () => {
+const Work: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
@@ -30,20 +30,38 @@ const Home: NextPage = () => {
 			</p>
 
 			<p>
+				<strong>Product Design</strong>
+			</p>
+			<p>
 				<a
 					className={styles.link}
-					href="https://twitter.com/izuchukwuuu"
+					href="https://www.figma.com/proto/57r7M384xDOzrqp7xn1JFR?node-id=1-2&starting-point-node-id=1:2&locale=en"
 				>
-					<span>→ Twitter</span>
+					<span>→ Portfolio</span>
+				</a>
+			</p>
+
+			<p>
+				<strong>Site Design</strong>
+			</p>
+			<p>
+				<a
+					className={styles.link}
+					href="https://beacon.lighthousehq.com"
+				>
+					<span>→ Lighthouse</span>
 				</a>
 			</p>
 			<p>
-				<a className={styles.link} href="https://github.com/izuchukwu">
-					<span>→ GitHub</span>
+				<a
+					className={styles.link}
+					href="https://sfcompute.com/inference"
+				>
+					<span>→ SF Compute Inference</span>
 				</a>
 			</p>
 		</div>
 	)
 }
 
-export default Home
+export default Work
