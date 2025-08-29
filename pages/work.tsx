@@ -29,7 +29,7 @@ const Work: NextPage = () => {
 				</span>
 			</p>
 
-			<p>
+			<p style={{marginTop: '20px'}}>
 				<strong>Product Design</strong>
 			</p>
 			<p>
