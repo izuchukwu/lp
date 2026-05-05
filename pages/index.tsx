@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 				<strong>Izu</strong>
 				<br />
 				<span style={{display: 'inline-block', paddingTop: 5}}>
-					Founder, SF Design
+					SF Design
 				</span>
 			</p>
 
