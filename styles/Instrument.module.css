@@ -1,3 +1,21 @@
+.downloadLink {
+	color: #007aff;
+	transition: 0.15s color;
+}
+
+.downloadLink:hover {
+	color: #0062cc;
+}
+
+.downloadLink span {
+	display: inline-block;
+	transition: 0.15s transform;
+}
+
+.downloadLink:hover span {
+	transform: translateX(5px);
+}
+
 .backdrop {
 	position: fixed;
 	inset: 0;

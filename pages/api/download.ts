@@ -5,7 +5,7 @@ import {join} from 'path'
 const USER = 'yc'
 const PASS = 'sfwasneverdead'
 const VALID = Buffer.from(`${USER}:${PASS}`).toString('base64')
-const COOKIE_NAME = 'tree_auth'
+const COOKIE_NAME = 'instrument_auth'
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {

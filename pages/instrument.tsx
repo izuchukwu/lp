@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Script from 'next/script'
 import {useEffect, useRef, useState} from 'react'
 import styles from '../styles/Home.module.css'
-import modalStyles from '../styles/Tree.module.css'
+import modalStyles from '../styles/Instrument.module.css'
 
 async function tryDownload(basic?: string): Promise<'ok' | 'unauthorized' | 'error'> {
 	try {
@@ -29,7 +29,7 @@ async function tryDownload(basic?: string): Promise<'ok' | 'unauthorized' | 'err
 	}
 }
 
-const Tree: NextPage = () => {
+const Instrument: NextPage = () => {
 	const [open, setOpen] = useState(false)
 	const [user, setUser] = useState('')
 	const [pass, setPass] = useState('')
@@ -105,7 +105,7 @@ const Tree: NextPage = () => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Tree</title>
+				<title>Instrument</title>
 			</Head>
 			<Script
 				async
@@ -120,11 +120,11 @@ const Tree: NextPage = () => {
 			</Script>
 
 			<p>
-				<img src="/logo-tree.svg" alt="Tree" width={32} height={39} />
+				<img src="/logo-instrument.svg" alt="Instrument" width={38} height={22} />
 			</p>
 
 			<p>
-				<strong>Tree</strong>
+				<strong>Instrument</strong>
 				<br />
 				<span style={{display: 'inline-block', paddingTop: 5}}>
 					The easiest way to run parallel Claude Codes
@@ -132,14 +132,14 @@ const Tree: NextPage = () => {
 			</p>
 
 			<p style={{color: 'rgba(0, 0, 0, 0.5)', maxWidth: 520}}>
-				Tree lets you run a team of Claude Codes in parallel just by talking
-				to one — each one safe & sound in isolated worktrees.
+				Instrument lets you run a team of Claude Codes in parallel just by
+				talking to one — each one safe & sound in isolated worktrees.
 			</p>
 
 			<p>
 				{/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-				<a className={styles.link} href="/api/download" onClick={onClickDownload}>
-					<span>→ Download Tree for Mac</span>
+				<a className={modalStyles.downloadLink} href="/api/download" onClick={onClickDownload}>
+					<span>→ Download Instrument for Mac</span>
 				</a>
 			</p>
 
@@ -151,7 +151,7 @@ const Tree: NextPage = () => {
 						onClick={e => e.stopPropagation()}
 						onSubmit={onSubmit}
 					>
-						<p className={modalStyles.title}>Download Tree</p>
+						<p className={modalStyles.title}>Download Instrument</p>
 						<p className={modalStyles.subtitle}>
 							Enter your credentials to continue.
 						</p>
@@ -206,4 +206,4 @@ const Tree: NextPage = () => {
 	)
 }
 
-export default Tree
+export default Instrument
